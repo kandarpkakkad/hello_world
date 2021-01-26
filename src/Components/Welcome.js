@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class Welcome extends Component {
     render() {
+        const { name } = this.props;
         return (
             <div>
-                <h1>Hello {this.props.name} from Class Component</h1>
+                <h1>Hello { name } from Class Component</h1>
                 {this.props.children}
             </div>
         );

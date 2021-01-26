@@ -5,13 +5,21 @@ import './App.css';
 // import Hello from './Components/Hello';
 // import Message from './Components/Message';
 // import Counter from './Components/Counter';
-import FunctionClick from './Components/FunctionClick';
-import ClassClick from './Components/ClassClick';
+// import FunctionClick from './Components/FunctionClick';
+// import ClassClick from './Components/ClassClick';
+// import EventBind from './Components/EventBind';
+// import ParentComponent from './Components/ParentComponent';
+// import UserGreeting from './Components/UserGreeting';
+// import NameList from './Components/NameList';
 
 function App() {
   return (
     <div className="App">
-      {/* <Greet name="Kandarp">
+      {/* <NameList />
+      <UserGreeting />
+      <ParentComponent />
+      <EventBind />
+      <Greet name="Kandarp">
         <p>This is paragraph</p>
       </Greet>
       <Greet name="Mili">
@@ -40,9 +48,9 @@ function App() {
       </Welcome>
       <Welcome name="Priti"></Welcome>
       <Message />
-      <Counter /> */}
+      <Counter />
       <FunctionClick />
-      <ClassClick />
+      <ClassClick /> */}
     </div>
   );
 }
