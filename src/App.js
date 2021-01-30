@@ -11,10 +11,12 @@ import './App.css';
 // import ParentComponent from './Components/ParentComponent';
 // import UserGreeting from './Components/UserGreeting';
 // import NameList from './Components/NameList';
+import Form from './Components/Form';
 
 function App() {
   return (
     <div className="App">
+      <Form />
       {/* <NameList />
       <UserGreeting />
       <ParentComponent />
