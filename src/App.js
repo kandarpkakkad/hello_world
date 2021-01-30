@@ -11,12 +11,14 @@ import './App.css';
 // import ParentComponent from './Components/ParentComponent';
 // import UserGreeting from './Components/UserGreeting';
 // import NameList from './Components/NameList';
-import Form from './Components/Form';
+// import Form from './Components/Form';
+import LifecycleMount from './Components/LifecycleMount';
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleMount />
+      {/* <Form /> */}
       {/* <NameList />
       <UserGreeting />
       <ParentComponent />
