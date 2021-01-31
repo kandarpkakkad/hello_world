@@ -18,7 +18,20 @@ class LifecycleMountChild extends Component {
     componentDidMount() {
         console.log("LifecycleMountChild componentDidMount")
     }
-    
+
+    shouldComponentUpdate = (nextProps, nextState) => {
+        console.log("LifecycleMountChild shouldComponentUpdate")
+        return true
+    }
+
+    getSnapshotBeforeUpdate = (prevProps, prevState) => {
+        console.log("LifecycleMountChild getSnapshotBeforeUpdate")
+        return null
+    }
+
+    componentDidUpdate = (prevProps, prevState, snapshot) => {
+        console.log("LifecycleMountChild componentDidUpdate")
+    }
 
     render() {
         console.log("LifecycleMountChild render")

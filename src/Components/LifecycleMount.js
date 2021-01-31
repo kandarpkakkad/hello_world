@@ -19,13 +19,33 @@ class LifecycleMount extends Component {
     componentDidMount() {
         console.log("LifecycleMount componentDidMount")
     }
-    
+
+    shouldComponentUpdate = (nextProps, nextState) => {
+        console.log("LifecycleMount shouldComponentUpdate")
+        return true
+    }
+
+    getSnapshotBeforeUpdate = (prevProps, prevState) => {
+        console.log("LifecycleMount getSnapshotBeforeUpdate")
+        return null
+    }
+
+    componentDidUpdate = (prevProps, prevState, snapshot) => {
+        console.log("LifecycleMount componentDidUpdate")
+    }
+
+    changeState = () => {
+        this.setState({
+            name: 'KK'
+        })
+    }
 
     render() {
         console.log("LifecycleMount render")
         return (
             <div>
                 <div>Lifecycle Mount.</div>
+                <button onClick={this.changeState}>Click Me</button>
                 <LifecycleMountChild />
             </div>
         )

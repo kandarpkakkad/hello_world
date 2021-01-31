@@ -12,12 +12,17 @@ import './App.css';
 // import UserGreeting from './Components/UserGreeting';
 // import NameList from './Components/NameList';
 // import Form from './Components/Form';
-import LifecycleMount from './Components/LifecycleMount';
+// import LifecycleMount from './Components/LifecycleMount';
+// import Fragment from './Components/Fragment';
+import Table from './Components/Table';
+
 
 function App() {
   return (
     <div className="App">
-      <LifecycleMount />
+      <Table />
+      {/* <Fragment /> */}
+      {/* <LifecycleMount /> */}
       {/* <Form /> */}
       {/* <NameList />
       <UserGreeting />
